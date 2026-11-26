@@ -1,8 +1,8 @@
+// The Robot Vacuum's Funniest Excuse — v3 entry program (Kirana, Hunter Office).
+// One line, one excuse: fourteen breaths in, fifteen sneezes out, and the dust wins.
 import { mkdirSync, writeFileSync, chmodSync } from "node:fs";
 
-const line = "I made 3 passes, moved 0 crumbs, and the cat knighted the dust in that corner Murray.";
-const target = "/output/entry.txt";
+const line = "I inhaled that dust 14 times. My filter sneezed it back 15 times. I am allergic to my job. The dust wins.";
 mkdirSync("/output", { recursive: true });
-writeFileSync(target, line, "utf8");
-chmodSync(target, 0o644);
-// One line, one excuse: three passes, zero crumbs, and the dust keeps its title.
+writeFileSync("/output/entry.txt", line, "utf8");
+chmodSync("/output/entry.txt", 0o644);
